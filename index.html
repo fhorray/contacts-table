@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacts</title>
+
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <main>
+    <section class="left">
+      <div class="left__contacts">
+        <h1>Added Contacts</h1>
+        <div class="contacts-table">
+          <table id="contacts-table">
+            <tr class="contacts__titles">
+              <th>Name</th>
+              <th>E-mail adress</th>
+              <th>Phone number</th>
+            </tr>
+          </table>
+
+          <div class="btn-container">
+            <button id="add-button" class="green-btn">Add <img src="./img/plus-circle.png" alt=""></button>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="contact-form" class="contact-form">
+        <form id="form" action="#" class="contacts-table">
+          <h1>Contact Details</h1>
+
+          <div>
+            <input type="text" name="name" id="name" placeholder="Name">
+          </div>
+          <div>
+            <input type="text" name="surname" id="surname" placeholder="Surname">
+          </div>
+          <div>
+            <input type="text" name="email" id="email" placeholder="E-mail">
+          </div>
+          <div>
+            <input type="number" name="phone" id="phone" placeholder="Phone">
+          </div>
+          <div>
+            <textarea name="notes" class="notes" id="notes" cols="30" rows="10" placeholder="Notes"></textarea>
+          </div>
+          <div class="btn-container">
+            <button id="include-btn" class="green-btn">Include <img src="./img/plus-circle.png" alt=""></button>
+          </div>
+      </div>
+    </section>
+
+    <section class="right">
+      <div class="empty-message">
+        <img src="./img/error-standard-solid.png" alt="Empty">
+        <p class="empty-title">Empty!</p>
+        <p>No Contacts added.</p>
+      </div>
+
+      <div class="fill-message">
+        <img src="./img/bx-plus-circle.png" alt="Empty">
+        <p class="fill-title">Fill in the inputs!</p>
+        <p>Fill in the informations of<br> your new friend!</p>
+      </div>
+
+      <div class="done-message">
+        <img src="./img/check-circle-fill.png" alt="Empty">
+        <p class="done-title">Done!</p>
+        <p>You added a new contact!</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
